@@ -1,0 +1,222 @@
+main {
+  #section1 {
+    background-color: $primary-color;
+    background-size: cover;
+    .headings {
+      width: 790px;
+      padding: 150px 0 0 40px;
+      h2 {
+        @include Font($size: 48px, $color: white, $weight: 600);
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+        span {
+          color: #6682ff;
+        }
+      }
+
+      p {
+        @include Font($size: 20px, $color: #abb2d9);
+        @media (max-width: 768px) {
+          text-align: center;
+        }
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+
+    .btns {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
+      button {
+        width: 217px;
+        height: 54px;
+        border-radius: 10px;
+        background-color: #2240cd;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        border-color: transparent;
+        transition: 0.1s ease-in-out;
+        &:hover {
+          background-color: #19319c;
+        }
+      }
+      .video {
+        width: 178px;
+        height: 48px;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .leaders {
+      margin-top: 200px;
+      overflow: hidden;
+      h3 {
+        @include Font($size: 22px, $color: white);
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .sliding-logos {
+        @include Flexible($align: center, $gap: 110px);
+        img {
+          width: 140px;
+          height: 35px;
+          object-fit: contain;
+        }
+        animation: slide 120s infinite;
+        &:hover {
+          animation-play-state: paused;
+        }
+      }
+    }
+
+    .thrive {
+      margin-top: 130px;
+      overflow: hidden;
+      .col-lg-6 {
+        padding: 0;
+      }
+
+      h2 {
+        @include Font($color: white, $size: 42px, $weight: 600);
+      }
+      h3 {
+        @include Font($color: white, $size: 21px);
+      }
+      p {
+        @include Font($color: #abb2d9, $size: 18px);
+        margin-top: 30px;
+      }
+      img {
+        width: 700px;
+        height: auto;
+        object-fit: cover;
+      }
+      .left {
+        padding-left: 120px;
+        padding-top: 200px;
+        @media (max-width: 768px) {
+          padding-left: 10px;
+          padding-top: 120px;
+        }
+      }
+    }
+  }
+
+  #section2 {
+    background-size: cover;
+    transform: translateY(-152px);
+    padding-top: 250px;
+    padding-bottom: 50px;
+    @media (max-width: 768px) {
+      padding-top: 300px;
+      transform: translateY(-250px);
+    }
+    @media (min-width: 1270px) {
+      transform: translateY(-220px);
+    }
+    .vers-1 {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .left {
+      h5 {
+        font-size: 20px;
+        color: #132a97;
+        font-weight: 600;
+      }
+
+      p {
+        color: #001c63;
+        font-size: 17px;
+        margin-bottom: 40px;
+      }
+      .p3 {
+        margin: 0;
+      }
+      @media (max-width: 768px) {
+        margin-top: 50px;
+      }
+    }
+
+    .right {
+      @include Flexible($align: center, $gap: 50px, $flexdir: column);
+      background-color: white;
+      height: auto;
+      border-radius: 10px;
+      padding: 55px 40px;
+      box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.24);
+      @media (max-width: 768px) {
+        padding: 25px 10px;
+      }
+      .info-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          @include Font($color: #001c63, $size: 31px, $weight: 600);
+          text-align: center;
+          @media (max-width: 768px) {
+            font-size: 25px;
+          }
+        }
+        h4 {
+          @include Font($color: #8992c7, $size: 21px);
+          text-align: center;
+          @media (max-width: 768px) {
+            font-size: 17px;
+          }
+        }
+
+        button {
+          margin-top: 20px;
+          width: 136px;
+          height: 55px;
+          border-radius: 5px;
+          color: #2240cd;
+          font-size: 18px;
+          border: 1px solid #8992c7;
+          background-color: white;
+          font-weight: 600;
+          &:hover {
+            background-color: #d4dbfb;
+          }
+        }
+      }
+    }
+
+    .vers-2 {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+}
+
+// @keyframes slide {
+//     0% {
+//         transform: translateX(0);
+//     }
+
+//     50% {
+//         transform: translateX(-1000px);
+//     }
+
+//     100% {
+//         transform: translateX(-2000px);
+//     }
+// }
