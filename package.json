@@ -1,0 +1,29 @@
+{
+  "name": "p19-final-project-multiplier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Accent-Academy/P19-Final-project-Multiplier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Accent-Academy/P19-Final-project-Multiplier/issues"
+  },
+  "homepage": "https://github.com/Accent-Academy/P19-Final-project-Multiplier#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "husky": "^8.0.3"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "pretty-quick": "^3.1.3"
+  }
+}
