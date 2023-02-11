@@ -152,23 +152,25 @@ const China = document.querySelector(".china");
 const Russia = document.querySelector(".russia");
 const Thailand = document.querySelector(".thailand");
 
-window.addEventListener("scroll", () => {
-  if (Countries.getBoundingClientRect().top < window.innerHeight) {
-    console.log("salam");
-    setTimeout(() => {
-      India.classList.add("india-active");
-      China.classList.add("china-active");
-      Russia.classList.add("russia-active");
-      Thailand.classList.add("thailand-active");
-    }, 500);
-  } else {
-    console.log("salam");
-    India.classList.remove("india-active");
-    China.classList.remove("china-active");
-    Russia.classList.remove("russia-active");
-    Thailand.classList.remove("thailand-active");
-  }
-});
+if (Countries) {
+  window.addEventListener("scroll", () => {
+    if (Countries.getBoundingClientRect().top < window.innerHeight) {
+      console.log("salam");
+      setTimeout(() => {
+        India.classList.add("india-active");
+        China.classList.add("china-active");
+        Russia.classList.add("russia-active");
+        Thailand.classList.add("thailand-active");
+      }, 500);
+    } else {
+      console.log("salam");
+      India.classList.remove("india-active");
+      China.classList.remove("china-active");
+      Russia.classList.remove("russia-active");
+      Thailand.classList.remove("thailand-active");
+    }
+  });
+}
 
 var swiper = new Swiper(".mySwiper3", {
   slidesPerView: "auto",
