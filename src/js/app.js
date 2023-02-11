@@ -152,23 +152,25 @@ const China = document.querySelector(".china");
 const Russia = document.querySelector(".russia");
 const Thailand = document.querySelector(".thailand");
 
-window.addEventListener("scroll", () => {
-  if (Countries.getBoundingClientRect().top < window.innerHeight) {
-    console.log("salam");
-    setTimeout(() => {
-      India.classList.add("india-active");
-      China.classList.add("china-active");
-      Russia.classList.add("russia-active");
-      Thailand.classList.add("thailand-active");
-    }, 500);
-  } else {
-    console.log("salam");
-    India.classList.remove("india-active");
-    China.classList.remove("china-active");
-    Russia.classList.remove("russia-active");
-    Thailand.classList.remove("thailand-active");
-  }
-});
+if (Countries) {
+  window.addEventListener("scroll", () => {
+    if (Countries.getBoundingClientRect().top < window.innerHeight) {
+      console.log("salam");
+      setTimeout(() => {
+        India.classList.add("india-active");
+        China.classList.add("china-active");
+        Russia.classList.add("russia-active");
+        Thailand.classList.add("thailand-active");
+      }, 500);
+    } else {
+      console.log("salam");
+      India.classList.remove("india-active");
+      China.classList.remove("china-active");
+      Russia.classList.remove("russia-active");
+      Thailand.classList.remove("thailand-active");
+    }
+  });
+}
 
 var swiper = new Swiper(".mySwiper3", {
   slidesPerView: "auto",
@@ -184,3 +186,63 @@ var swiper = new Swiper(".mySwiper3", {
     },
   },
 });
+
+const VisibleEye = document.querySelector(".vis-eye");
+const HiddenEye = document.querySelector(".hid-eye");
+const PasswordField = document.querySelector(".pw-input");
+const MailField = document.querySelector(".mail");
+
+if (VisibleEye) {
+  VisibleEye.addEventListener("click", () => {
+    VisibleEye.classList.remove("block");
+    HiddenEye.classList.add("block");
+    if (PasswordField.getAttribute("type") == "password") {
+      PasswordField.setAttribute("type", "text");
+    }
+  });
+}
+if (HiddenEye) {
+  HiddenEye.addEventListener("click", () => {
+    HiddenEye.classList.remove("block");
+    VisibleEye.classList.add("block");
+    if (PasswordField.getAttribute("type") == "text") {
+      PasswordField.setAttribute("type", "password");
+    }
+  });
+}
+
+if (PasswordField) {
+  PasswordField.addEventListener("focus", () => {
+    PasswordField.style.borderColor = "#132A97";
+  });
+  PasswordField.addEventListener("blur", () => {
+    PasswordField.style.borderColor = "rgba(128, 128, 128, 0.324)";
+  });
+
+  PasswordField.addEventListener("keyup", () => {
+    if (PasswordField.value.length > 0) {
+      if (VisibleEye) {
+        VisibleEye.style.color = "#132A97";
+      }
+      if (HiddenEye) {
+        HiddenEye.style.color = "#132A97";
+      }
+    } else {
+      if (VisibleEye) {
+        VisibleEye.style.color = "";
+      }
+      if (HiddenEye) {
+        HiddenEye.style.color = "";
+      }
+    }
+  });
+}
+
+if (MailField) {
+  MailField.addEventListener("focus", () => {
+    MailField.style.borderColor = "black";
+  });
+  MailField.addEventListener("blur", () => {
+    MailField.style.borderColor = "rgba(128, 128, 128, 0.324)";
+  });
+}
