@@ -184,3 +184,15 @@ var swiper = new Swiper(".mySwiper3", {
     },
   },
 });
+
+const RadioChoose = document.querySelectorAll(".radio-input");
+const Radio = document.querySelectorAll(".radio");
+
+if (RadioChoose) {
+  for (let t = 0; t < RadioChoose.length; t++) {
+    RadioChoose[t].addEventListener("click", () => {
+      Radio[t].getAttribute("checked", "false");
+      Radio[t].setAttribute("checked", "true");
+    });
+  }
+}

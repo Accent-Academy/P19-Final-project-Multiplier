@@ -2086,6 +2086,140 @@ main .swiper-slide img {
     transform: translateX(-2000px);
   }
 }
+main .row {
+  padding: 0 !important;
+}
+main .row .col-lg-6 {
+  padding: 0 !important;
+}
+@media (max-width: 768px) {
+  main .row .col-md-5 {
+    display: none;
+  }
+}
+main .left {
+  height: 100vh;
+  background-color: #001c63;
+  background-size: cover;
+  padding: 35px 100px 35px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  main .left {
+    padding: 35px 50px 35px 30px;
+  }
+}
+main .left .left-bottom h3 {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+}
+@media (max-width: 991px) {
+  main .left .left-bottom h3 {
+    font-size: 21px;
+  }
+}
+main .left .left-bottom p {
+  line-height: 32px;
+  color: white;
+  font-size: 18px;
+}
+@media (max-width: 991px) {
+  main .left .left-bottom p {
+    font-size: 14px;
+  }
+}
+main .right {
+  height: 100vh;
+  max-width: 976px;
+  padding: 20px 90px 0 90px;
+}
+@media (max-width: 991px) {
+  main .right {
+    padding: 50px 40px 20px 40px;
+  }
+}
+@media (max-width: 500px) {
+  main .right {
+    padding: 50px 25px 20px 25px;
+  }
+}
+main .right h2 {
+  font-size: 35px;
+  color: #001c63;
+  font-weight: 600;
+}
+@media (max-width: 425px) {
+  main .right h2 {
+    font-size: 27px;
+  }
+}
+main .right p {
+  font-size: 16px;
+  color: #8992c7;
+}
+@media (max-width: 385px) {
+  main .right p {
+    font-size: 13px;
+  }
+}
+main .right .right-body h5 {
+  color: #8992c7;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 80px 0 40px 0;
+}
+main .right .right-body form .radio-input {
+  padding: 0 16px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid rgba(128, 128, 128, 0.422);
+  margin-bottom: 20px;
+  gap: 15px;
+  cursor: default;
+}
+main .right .right-body form .radio-input input {
+  width: 20px !important;
+  height: 20px !important;
+}
+main .right .right-body form .radio-input h6 {
+  margin: 0;
+  font-size: 13px;
+  color: #001c63;
+}
+main .right .right-body form .radio-input h6 span {
+  font-weight: bold;
+}
+main .right .right-body form .btn-cont {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 60px 0;
+}
+main .right .right-body form .btn-cont button {
+  background-color: #2240cd;
+  width: 127px;
+  height: 64px;
+  font-size: 19px;
+  font-weight: 500;
+  color: white;
+  border-radius: 8px;
+  border-color: transparent;
+}
+main .right .right-body .signup-link h5 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+main .right .right-body .signup-link h5 a {
+  color: #001c63;
+  text-decoration: underline !important;
+}
+
 footer .foot-top {
   padding: 36px 0;
   border-bottom: 1px solid #e9ecfa;
