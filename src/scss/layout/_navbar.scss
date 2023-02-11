@@ -143,11 +143,11 @@ body {
         }
 
         #signup {
-          padding: 17px 15px;
+          padding: 15px 15px;
           font-size: 16px;
           color: white;
           background-color: #2240cd;
-          border-radius: 10px;
+          border-radius: 8px;
           font-weight: 500;
           transition: 0.3s ease-in-out;
 
@@ -157,7 +157,7 @@ body {
         }
 
         button {
-          padding: 17px 20px;
+          padding: 15px 20px;
           border: calc(0.5px) solid rgba(82, 81, 81, 0.826);
           background-color: transparent;
           border-radius: 10px;
@@ -184,7 +184,7 @@ body {
       @include Flexible($justify: space-between, $align: center);
       display: none;
       @media (max-width: 440px) {
-        padding: 0 15px;
+        padding: 5px 15px;
       }
 
       .logo {
@@ -243,14 +243,20 @@ body {
   .mobile-menu {
     width: 100%;
     background-color: white;
-    margin-top: 85px;
-    max-height: 0;
+    z-index: 1000;
+    // margin-top: 85px;
+    //max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    top: 85px;
+    left: 0;
 
     ul {
       margin: 0;
       padding: 0;
+      padding-top: 8px;
 
       li {
         padding: 15px 30px;
@@ -268,7 +274,6 @@ body {
       .drop-menu {
         width: 100%;
         background-color: #f3f3f3;
-        height: auto;
         padding: 20px 30px;
       }
     }
@@ -418,6 +423,7 @@ body {
 }
 
 .active-menu {
-  max-height: 1000px !important;
+  //max-height: 2000px !important;
+  height: 80vh !important;
   overflow: auto !important;
 }
