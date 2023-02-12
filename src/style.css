@@ -2086,18 +2086,18 @@ main .swiper-slide img {
     transform: translateX(-2000px);
   }
 }
-main .row {
+#login .row {
   padding: 0 !important;
 }
-main .row .col-lg-6 {
+#login .row .col-lg-6 {
   padding: 0 !important;
 }
 @media (max-width: 768px) {
-  main .row .col-md-5 {
+  #login .row .col-md-5 {
     display: none;
   }
 }
-main .left {
+#login .left {
   height: 100vh;
   background-color: #001c63;
   background-size: cover;
@@ -2107,31 +2107,31 @@ main .left {
   flex-direction: column;
 }
 @media (max-width: 991px) {
-  main .left {
+  #login .left {
     padding: 35px 50px 35px 30px;
   }
 }
-main .left .left-bottom h3 {
+#login .left .left-bottom h3 {
   font-size: 25px;
   color: white;
   font-weight: 600;
 }
 @media (max-width: 991px) {
-  main .left .left-bottom h3 {
+  #login .left .left-bottom h3 {
     font-size: 21px;
   }
 }
-main .left .left-bottom p {
+#login .left .left-bottom p {
   line-height: 32px;
   color: white;
   font-size: 18px;
 }
 @media (max-width: 991px) {
-  main .left .left-bottom p {
+  #login .left .left-bottom p {
     font-size: 14px;
   }
 }
-main .right {
+#login .right {
   height: 100vh;
   max-width: 976px;
   display: flex;
@@ -2140,35 +2140,35 @@ main .right {
   padding: 50px 100px 20px 100px;
 }
 @media (max-width: 991px) {
-  main .right {
+  #login .right {
     padding: 50px 40px 20px 40px;
   }
 }
 @media (max-width: 500px) {
-  main .right {
+  #login .right {
     padding: 50px 25px 20px 25px;
   }
 }
-main .right h2 {
+#login .right h2 {
   font-size: 35px;
   color: #001c63;
   font-weight: 600;
 }
 @media (max-width: 385px) {
-  main .right h2 {
+  #login .right h2 {
     font-size: 27px;
   }
 }
-main .right p {
+#login .right p {
   font-size: 16px;
   color: #8992c7;
 }
 @media (max-width: 385px) {
-  main .right p {
+  #login .right p {
     font-size: 13px;
   }
 }
-main .right .right-body .google {
+#login .right .right-body .google {
   width: 90%;
   margin: 0 auto;
   border: 1px solid rgba(128, 128, 128, 0.384);
@@ -2180,10 +2180,10 @@ main .right .right-body .google {
   justify-content: center;
   transition: 0.1s ease-in-out;
 }
-main .right .right-body .google:hover {
+#login .right .right-body .google:hover {
   background-color: rgba(142, 181, 208, 0.0745098039);
 }
-main .right .right-body .google img {
+#login .right .right-body .google img {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -2191,18 +2191,18 @@ main .right .right-body .google img {
   top: 50%;
   transform: translateY(-50%);
 }
-main .right .right-body .google span {
+#login .right .right-body .google span {
   font-size: 13px;
   color: #3c4043;
   font-weight: 500;
 }
-main .right .right-body .or {
+#login .right .right-body .or {
   height: 1px;
   background-color: rgba(128, 128, 128, 0.162);
   position: relative;
   margin: 30px;
 }
-main .right .right-body .or span {
+#login .right .right-body .or span {
   position: absolute;
   left: 50%;
   top: -11px;
@@ -2212,7 +2212,7 @@ main .right .right-body .or span {
   color: #8992c7;
   background-color: white;
 }
-main .right .right-body form label {
+#login .right .right-body form label {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -2221,11 +2221,11 @@ main .right .right-body form label {
   margin-bottom: 10px;
   font-weight: 500;
 }
-main .right .right-body form label a {
+#login .right .right-body form label a {
   font-size: 12px;
   color: #abb2d9;
 }
-main .right .right-body form input {
+#login .right .right-body form input {
   width: 100%;
   margin-bottom: 15px;
   padding: 12px;
@@ -2233,51 +2233,51 @@ main .right .right-body form input {
   border: 1px solid rgba(128, 128, 128, 0.324);
   font-size: 14px;
 }
-main .right .right-body form input::-moz-placeholder {
+#login .right .right-body form input::-moz-placeholder {
   font-size: 13px;
   color: rgba(137, 146, 199, 0.8431372549);
 }
-main .right .right-body form input::placeholder {
+#login .right .right-body form input::placeholder {
   font-size: 13px;
   color: rgba(137, 146, 199, 0.8431372549);
 }
-main .right .right-body form .pass {
+#login .right .right-body form .pass {
   position: relative;
   margin-bottom: 15px;
 }
-main .right .right-body form .pass input {
+#login .right .right-body form .pass input {
   margin: 0;
 }
-main .right .right-body form .pass span {
+#login .right .right-body form .pass span {
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
 }
-main .right .right-body form .pass span .eye-icon {
+#login .right .right-body form .pass span .eye-icon {
   display: none;
   color: #d0d4ea;
 }
-main .right .right-body form .check {
+#login .right .right-body form .check {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-main .right .right-body form .check input {
+#login .right .right-body form .check input {
   width: 26px;
   height: 26px;
   margin: 0;
 }
-main .right .right-body form .check span {
+#login .right .right-body form .check span {
   font-size: 13px;
   color: #001c63;
 }
-main .right .right-body form .btn-cont {
+#login .right .right-body form .btn-cont {
   display: flex;
   justify-content: center;
   margin: 20px 0 30px 0;
 }
-main .right .right-body form .btn-cont button {
+#login .right .right-body form .btn-cont button {
   background-color: #2240cd;
   width: 104px;
   height: 64px;
@@ -2287,12 +2287,12 @@ main .right .right-body form .btn-cont button {
   border-radius: 8px;
   border-color: transparent;
 }
-main .right .right-body .signup-link h5 {
+#login .right .right-body .signup-link h5 {
   font-size: 15px;
   text-align: center;
   font-weight: 400;
 }
-main .right .right-body .signup-link h5 a {
+#login .right .right-body .signup-link h5 a {
   color: #001c63;
   text-decoration: underline !important;
 }
