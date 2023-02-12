@@ -185,14 +185,29 @@ var swiper = new Swiper(".mySwiper3", {
   },
 });
 
-const RadioChoose = document.querySelectorAll(".radio-input");
-const Radio = document.querySelectorAll(".radio");
+const RadioInput1 = document.querySelector(".input1");
+const RadioInput2 = document.querySelector(".input2");
+const Radio1 = document.querySelector(".radio1");
+const Radio2 = document.querySelector(".radio2");
 
-if (RadioChoose) {
-  for (let t = 0; t < RadioChoose.length; t++) {
-    RadioChoose[t].addEventListener("click", () => {
-      Radio[t].getAttribute("checked", "false");
-      Radio[t].setAttribute("checked", "true");
-    });
-  }
+if (RadioInput1) {
+  RadioInput1.addEventListener("click", () => {
+    Radio1.checked = true;
+    Radio2.checked = false;
+  });
 }
+if (RadioInput2) {
+  RadioInput2.addEventListener("click", () => {
+    Radio2.checked = true;
+    Radio1.checked = false;
+  });
+}
+
+// if (RadioChoose) {
+//   for (let t = 0; t < RadioChoose.length; t++) {
+//     RadioChoose[t].addEventListener("click", () => {
+//       Radio[t].getAttribute("checked", "false");
+//       Radio[t].setAttribute("checked", "true");
+//     });
+//   }
+// }

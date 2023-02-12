@@ -1,4 +1,4 @@
-main {
+#signup {
   .row {
     padding: 0 !important;
 
@@ -102,9 +102,13 @@ main {
           gap: 15px;
           cursor: default;
 
-          input {
-            width: 20px !important;
-            height: 20px !important;
+          .radio1 {
+            width: 25px !important;
+            height: 25px !important;
+          }
+          .radio2 {
+            width: 19px !important;
+            height: 19px !important;
           }
 
           h6 {
