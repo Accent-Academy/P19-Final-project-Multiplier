@@ -2807,7 +2807,14 @@ main #questions .headings p {
   }
 }
 main #questions .question-lists {
-  padding: 0 30px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  main #questions .question-lists {
+    max-width: 530px;
+    padding-left: 0;
+  }
 }
 main #questions .question-lists .quest {
   display: flex;
@@ -2821,6 +2828,12 @@ main #questions .question-lists .quest h6 {
   color: #333333;
   line-height: 32px;
   font-weight: 400;
+  padding-right: 10px;
+}
+@media (max-width: 530px) {
+  main #questions .question-lists .quest h6 {
+    font-size: 15px;
+  }
 }
 main #questions .question-lists .quest img {
   transition: 0.4s ease-in-out;
@@ -2841,6 +2854,25 @@ main #questions .question-lists .answer p {
   line-height: 24px;
   font-size: 16px;
   margin: 0;
+}
+main #questions .btn-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+main #questions .btn-cont button {
+  width: 218px;
+  height: 55px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid rgba(34, 64, 205, 0.2);
+  color: #2240cd;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.1s ease-in-out;
+}
+main #questions .btn-cont button:hover {
+  background-color: rgba(34, 64, 205, 0.1);
 }
 main #choose-multiplier {
   background-color: #132a97;

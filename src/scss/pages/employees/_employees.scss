@@ -728,7 +728,12 @@ main {
     }
 
     .question-lists {
-      padding: 0 30px;
+      padding: 20px 30px;
+      margin-bottom: 20px;
+      @media (max-width: 991px) {
+        max-width: 530px;
+        padding-left: 0;
+      }
       .quest {
         display: flex;
         align-items: center;
@@ -740,6 +745,10 @@ main {
           color: #333333;
           line-height: 32px;
           font-weight: 400;
+          padding-right: 10px;
+          @media (max-width: 530px) {
+            font-size: 15px;
+          }
         }
         img {
           transition: 0.4s ease-in-out;
@@ -760,6 +769,26 @@ main {
           line-height: 24px;
           font-size: 16px;
           margin: 0;
+        }
+      }
+    }
+
+    .btn-cont {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      button {
+        width: 218px;
+        height: 55px;
+        background-color: transparent;
+        border-radius: 8px;
+        border: 1px solid rgba(34, 64, 205, 0.2);
+        color: #2240cd;
+        font-size: 18px;
+        font-weight: 600;
+        transition: 0.1s ease-in-out;
+        &:hover {
+          background-color: rgba(34, 64, 205, 0.1);
         }
       }
     }
