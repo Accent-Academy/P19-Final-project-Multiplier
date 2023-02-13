@@ -152,23 +152,25 @@ const China = document.querySelector(".china");
 const Russia = document.querySelector(".russia");
 const Thailand = document.querySelector(".thailand");
 
-window.addEventListener("scroll", () => {
-  if (Countries.getBoundingClientRect().top < window.innerHeight) {
-    console.log("salam");
-    setTimeout(() => {
-      India.classList.add("india-active");
-      China.classList.add("china-active");
-      Russia.classList.add("russia-active");
-      Thailand.classList.add("thailand-active");
-    }, 500);
-  } else {
-    console.log("salam");
-    India.classList.remove("india-active");
-    China.classList.remove("china-active");
-    Russia.classList.remove("russia-active");
-    Thailand.classList.remove("thailand-active");
-  }
-});
+if (Countries) {
+  window.addEventListener("scroll", () => {
+    if (Countries.getBoundingClientRect().top < window.innerHeight) {
+      console.log("salam");
+      setTimeout(() => {
+        India.classList.add("india-active");
+        China.classList.add("china-active");
+        Russia.classList.add("russia-active");
+        Thailand.classList.add("thailand-active");
+      }, 500);
+    } else {
+      console.log("salam");
+      India.classList.remove("india-active");
+      China.classList.remove("china-active");
+      Russia.classList.remove("russia-active");
+      Thailand.classList.remove("thailand-active");
+    }
+  });
+}
 
 var swiper = new Swiper(".mySwiper3", {
   slidesPerView: "auto",
@@ -184,3 +186,39 @@ var swiper = new Swiper(".mySwiper3", {
     },
   },
 });
+
+var swiper = new Swiper(".mySwiper5", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  spaceBetween: 80,
+  breakpoints: {
+    768: {
+      spaceBetween: 130,
+    },
+    300: {
+      spaceBetween: 110,
+    },
+  },
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 300,
+    modifier: 1,
+    slideShadows: false,
+  },
+});
+
+const accQuestion = document.querySelectorAll(".quest");
+const accAnswer = document.querySelectorAll(".answer");
+const AccIcon = document.querySelectorAll(".acc-icon");
+
+if (accQuestion) {
+  for (let i = 0; i < accQuestion.length; i++) {
+    accQuestion[i].addEventListener("click", () => {
+      accAnswer[i].classList.toggle("active-acc");
+      AccIcon[i].classList.toggle("active-acc-icon");
+    });
+  }
+}
