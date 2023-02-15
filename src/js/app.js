@@ -193,6 +193,10 @@ var swiper = new Swiper(".mySwiper5", {
   centeredSlides: true,
   slidesPerView: "auto",
   spaceBetween: 80,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   breakpoints: {
     768: {
       spaceBetween: 130,
