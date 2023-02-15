@@ -2134,9 +2134,6 @@ main .swiper-slide img {
 #login .right {
   height: 100vh;
   max-width: 976px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 50px 100px 20px 100px;
 }
 @media (max-width: 991px) {
